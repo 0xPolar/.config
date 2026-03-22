@@ -1,0 +1,24 @@
+# =========================
+# LOG FILES
+# =========================
+*.log
+yasb/yasb.log*
+
+# =========================
+# LARGE BINARIES & DEPENDENCIES
+# =========================
+opencode/node_modules/
+opencode/bun.lock
+raycast-x/
+
+# =========================
+# BACKUP FILES
+# =========================
+*.backup
+*.bak
+
+# =========================
+# CACHE & TEMPORARY
+# =========================
+yasb/launchpad/
+configstore/

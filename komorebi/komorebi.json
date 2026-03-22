@@ -1,0 +1,112 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.38/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 4,
+  "default_container_padding": 4,
+  "animation": {
+    "enabled": true,
+    "duration": 170,
+    "fps": 144,
+    "style": "EaseOutQuad"
+  },
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "vmware.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "vmplayer.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Mullvad VPN.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "border": false,
+  "border_width": 8,
+  "border_offset": -1,
+  "theme": {
+    "palette": "Base16",
+    "name": "Ashes",
+    "unfocused_border": "Base03",
+    "bar_accent": "Base0D"
+  },
+  "display_index_preferences": {
+    "0": "GSM5BB4-5&1d04608&1&UID28929",
+    "1": "SAM0D2C-5&1d04608&1&UID28928"
+  },
+  "monitors": [
+    {
+      "name": "MainMonitor",
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "BSP"
+        },
+        {
+          "name": "III",
+          "layout": "BSP"
+        },
+        {
+          "name": "IV",
+          "layout": "BSP"
+        },
+        {
+          "name": "V",
+          "layout": "BSP"
+        },
+        {
+          "name": "VI",
+          "layout": "BSP"
+        },
+        {
+          "name": "VII",
+          "layout": "BSP"
+        }
+      ]
+    },
+    {
+      "name": "MainMonitor",
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "Rows"
+        },
+        {
+          "name": "II",
+          "layout": "Rows"
+        },
+        {
+          "name": "III",
+          "layout": "Rows"
+        },
+        {
+          "name": "IV",
+          "layout": "Rows"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Rows"
+        },
+        {
+          "name": "VII",
+          "layout": "Rows"
+        }
+      ]
+    }
+  ]
+}
