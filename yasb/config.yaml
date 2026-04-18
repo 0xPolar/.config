@@ -17,7 +17,7 @@ bars:
       enabled: true
       duration: 1000
     blur_effect:
-      enabled: true
+      enabled: false
       acrylic: false
     window_flags:
       windows_app_bar: true

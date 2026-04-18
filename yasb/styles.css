@@ -1,18 +1,19 @@
 :root {
-    --red: #f38ba8;
-    --yellow: #f9e2af;
-    --green: #a6e3a1;
-    --blue: #89b4fa;
-    --lavender: #b4befe;
-    --text: #cdd6f4;
-    --overlay2: #9399b2;
-    --surface2: #585b70;
-    --surface1: #45475a;
-    --base: #1e1e2e;
-    --mantle: rgba(24, 24, 37, 0.5);
-    --crust: rgba(17, 17, 27, 0.2);
-    --main: #10151d;
-    --widget-background: #24273a;
+    --red: #c14a3d;
+    --yellow: #d4a64a;
+    --green: #9c8448;
+    --blue: #c9a962;
+    --lavender: #d4a64a;
+    --text: #c9a962;
+    --overlay2: #8a7a4a;
+    --surface2: #3a2f1a;
+    --surface1: #2a2212;
+    --base: #0a0a0a;
+    --mantle: #0a0a0a;
+    --crust: #141008;
+    --main: #0a0a0a;
+    --widget-background: #141008;
+    --accent: #d97706;
 }
 QToolTip {
     padding: 6px;
@@ -31,9 +32,9 @@ QToolTip {
     padding: 0;
 }
 .yasb-bar {
-    padding: 0 10px;
+    padding: 0 8px;
     margin: 0;
-    background-color: var(--mantle);
+    background-color: transparent;
 }
 .widget {
     padding: 0 2px;
@@ -45,7 +46,6 @@ QToolTip {
 .widget .label {
     padding: 0px 2px;
 }
-.clock-widget .widget-container,
 .volume-widget .widget-container,
 .weather-widget .widget-container,
 .media-widget .widget-container,
@@ -53,24 +53,26 @@ QToolTip {
 .power-menu-widget .widget-container,
 .memory-widget .widget-container,
 .cpu-widget .widget-container,
-.komorebi-workspaces .widget-container {
-    background-color: var(--widget-background);
-    margin: 2px 0 2px 0;
-    border-radius: 8px;
+.komorebi-workspaces .widget-container,
+.home-widget .widget-container,
+.taskbar-widget .widget-container {
+    background-color: #0a0a0a;
+    margin: 4px 2px;
+    border-radius: 4px;
+    padding: 0 6px;
+    border: 1px solid #2a2212;
 }
-.cpu-widget {
-    padding-right: 0;
+.clock-widget .widget-container {
+    background-color: var(--accent);
+    margin: 4px 2px;
+    border-radius: 4px;
+    padding: 0 8px;
+    border: 1px solid #b36205;
 }
-.memory-widget {
-    padding-left: 0;
-}
-.cpu-widget .widget-container {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
-.memory-widget .widget-container {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+.clock-widget .label,
+.clock-widget .icon {
+    color: #0a0a0a;
+    font-weight: 700;
 }
 .komorebi-workspaces .offline-status {
     color: var(--blue);
@@ -90,10 +92,10 @@ QToolTip {
     color: var(--lavender);
 }
 .komorebi-workspaces .ws-btn.populated {
-    color: var(--green);
+    color: var(--yellow);
 }
 .komorebi-workspaces .ws-btn.active {
-    color: var(--green);
+    color: var(--yellow);
 }
 .apps-widget .label {
     font-size: 16px;
@@ -103,7 +105,7 @@ QToolTip {
     color: var(--text);
 }
 .clock-widget .icon {
-    color: var(--green);
+    color: #0a0a0a;
     margin-right: 4px;
 }
 .calendar {
@@ -196,7 +198,7 @@ QToolTip {
 }
 .power-menu-popup .button.hover .label,
 .power-menu-popup .button.hover .icon {
-    color: var(--green);
+    color: var(--yellow);
 }
 .uptime {
     font-size: 16px;
@@ -205,7 +207,7 @@ QToolTip {
     font-weight: 600;
 }
 .volume-widget .icon {
-    color: var(--green);
+    color: var(--yellow);
     margin-right: 4px;
 } 
 .volume-slider {
@@ -245,7 +247,7 @@ QToolTip {
 .weather-widget .icon {
     font-size: 18px;
     margin: 0 4px 1px 0;
-    color: var(--green);
+    color: var(--yellow);
 }
 .weather-card {
     background-color:var(--crust);
@@ -289,10 +291,6 @@ QToolTip {
 }
 .home-widget {
     padding: 2px 4px 2px 0px;    
-}
-.home-widget .widget-container {
-    background-color: var(--widget-background);
-    border-radius: 8px;    
 }
 .home-widget .icon:hover {
     color: var(--text);
@@ -343,7 +341,7 @@ QToolTip {
 	color: var(--surface1);
 }
 .notification-widget .icon {
-    color: var(--green);
+    color: var(--yellow);
 }
 .notification-widget .icon.new-notification {
     color: var(--red);
@@ -352,10 +350,10 @@ QToolTip {
     color: var(--red);
 }
 .cpu-widget .icon {
-    color: var(--green);
+    color: var(--yellow);
     margin-right: 4px;
 }
 .memory-widget .icon {
-    color: var(--green);
+    color: var(--yellow);
     margin-right: 4px;
 }
